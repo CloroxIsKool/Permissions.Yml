@@ -1,0 +1,70 @@
+groups:
+  Default
+    default: true
+    build: true
+    prefix: '&7Starter Dogs'
+    permissions
+    - essentials.help
+    - modifyworld.chat
+    - modifyworld.*
+    - essentials.home
+    - essentials.sethome
+    - essentials.back
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.spawn
+  Donator
+    build: true
+    inheritance:
+    - Default
+    prefix: '&4F&6&li&e&lr&a&le'
+    permissions:
+    - essentials.enchant
+    - essentials.repair
+
+  Moderator:
+    build: true
+    inheritance:
+    - Default
+    prefix: '&bMod'
+    suffix: '&7'
+    permissions:
+    - essentials.repair
+    - essentials.heal
+    - essentials.item
+    - essentials.give
+    - essentials.fly
+    - essentials.kick
+    - essentials.mute
+    - essentials.tjail
+    - essentials.jail
+    - essentials.tempban
+    - essentials.vanish
+    - sv.use
+    - sv.others
+  Admin:
+    build: true
+    inheritance:
+    - Moderator
+    prefix: '&4&lAdmin'
+    suffix: '&7'
+    permissions: 
+    - essentials.gamemode
+    - essentials.ban
+    - essentials.unban
+    - essentials.ipban
+    - essentials.unipban 
+    - essentials.pardon
+    - essentials.enchant
+    - sv.see
+    - sv.list
+    - 
+  Owner:
+    build:true
+    inheritance:
+    - Admin
+    prefix: '&5&lOwner'
+    suffix: '&b'
+    permissions:
+    - '*'
